@@ -13,5 +13,10 @@ fun getFortuneCookie(): String {
 }
 
 fun main(args: Array<String>) {
-    println("Your fortune: ${getFortuneCookie()}")
+    for (i in 1..10) {
+        val answer = getFortuneCookie()
+        println("Your fortune: $answer")
+        if (answer == "Take it easy and enjoy life!")
+            return
+    }
 }
